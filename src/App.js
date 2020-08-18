@@ -17,6 +17,7 @@ function App(props) {
     <MediaCard title={<h2>Media Card</h2>} body="This is the body of Media card" imageUrl="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search-v2_297x176.jpg"/>
     <h2>Gate Component</h2>
     <Gate isOpen={true} />
+    <p>gate component used arrow function</p>
     <hr/>
     <i>Made by: Nouman Javed</i>
   </div>
