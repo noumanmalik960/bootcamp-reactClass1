@@ -21,4 +21,4 @@ import App from './App';
 
 // ReactDOM.render(<MediaCard title={<h2>Greet</h2>} body="Hello everyone"/> , document.querySelector('#root'));
 
-ReactDOM.render(<App name="ali"/>, document.querySelector('#root'))
+ReactDOM.render(<App name="Nouman Javed"/>, document.querySelector('#root'))
