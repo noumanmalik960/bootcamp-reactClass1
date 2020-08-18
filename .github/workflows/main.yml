@@ -1,0 +1,25 @@
+# This is a basic workflow to help you get started with Actions
+
+name: reactClass1-deploy
+
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Nodejs
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: 12
+    - name: Install yarn
+      uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: install
+    - uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: build
+    - name: Insall Surge
+      run: npm install -g surge
+    - name: Run surge
+      run: surge ./build  bootcamp-reactClass1.surge.sh --token ${{ secrets.SURGE_TOKEN }}
