@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// first way
+// function Greet({name}) {
+//   return <div>Hello {name}!</div>
+// }
+// ReactDOM.render(<Greet name="Ali" />, document.querySelector('#root'))
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// second way
+// ReactDOM.render(<App name="Nouman" />, document.querySelector('#root'))
+
+
+// function MediaCard(props) {
+//     return <div>
+//         <h2>{props.title}</h2>
+//         <p>{props.body}</p>
+//     </div>
+// }
+
+// ReactDOM.render(<MediaCard title={<h2>Greet</h2>} body="Hello everyone"/> , document.querySelector('#root'));
+
+ReactDOM.render(<App name="ali"/>, document.querySelector('#root'))
