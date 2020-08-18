@@ -7,6 +7,8 @@ function App({name}) {
   return (
   <div><h1>Hello world from App.js created by {name}</h1>
       <Hello firstName="Nouman"></Hello>
+      <hr/>
+      <p>This line is created Later</p>
   </div>
   );
 }
