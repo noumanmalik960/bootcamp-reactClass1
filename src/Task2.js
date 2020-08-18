@@ -7,7 +7,7 @@ function MediaCard({title, body, imageUrl}) {
         <div>
             <p>{title} (above prop is passed as JSX)</p>
             <p>{body}</p>
-            <img src={imageUrl} alt="Sample image"/>
+            <img src={imageUrl} alt="butterfly"/>
         </div>
     )
 }
