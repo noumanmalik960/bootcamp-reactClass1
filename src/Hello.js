@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-function Hello({firstName}){
-    return <p>This is a 'p' tag from Hello component created by {firstName}</p>
+function Hello({name}){
+    return <p>This is a 'p' tag from Hello component created by {name}</p>
 }
 
 
