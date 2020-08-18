@@ -1,7 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Hello from './Hello'
 import './index.css'
 import MediaCard from './Task2.js'
 import Gate from './Gate'
@@ -18,7 +17,8 @@ function App(props) {
     <MediaCard title={<h2>Media Card</h2>} body="This is the body of Media card" imageUrl="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search-v2_297x176.jpg"/>
     <h2>Gate Component</h2>
     <Gate isOpen={true} />
-
+    <hr/>
+    <i>Made by: Nouman Javed</i>
   </div>
 
   );
